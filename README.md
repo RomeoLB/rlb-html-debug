@@ -4,7 +4,7 @@ This repo allows the user to setup their Brightsign player to debug a HTML appli
 
 The below workflow was tested on a Mac system so it may need to be adjusted slightly for a Windows based system.
 
-## Pre requistes:
+## Pre requisites:
 
 1. Update player OS 
     - Series 5 players install OS 9.0.145.1+
