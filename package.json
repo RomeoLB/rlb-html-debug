@@ -1,0 +1,22 @@
+{
+  "name": "rlb-html-debug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "autorun.brs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "restart": "node restart.js",
+    "upload-autorun-restart": "bsc putfile $DEVICE_NAME $AUTORUNFILE && node restart.js",
+    "upload-html-restart": "bsc putfile $DEVICE_NAME $INDEXFILE && node restart.js",
+    "upload-scripts-restart": "bsc putfile $DEVICE_NAME $AUTORUNFILE && bsc putfile $DEVICE_NAME $INDEXFILE && node restart.js",
+    "upload-folder-all-restart": "bsc putfile $DEVICE_NAME $FOLDER && node restart.js",
+    "upload-html": "bsc putfile $DEVICE_NAME $INDEXFILE",
+    "upload-folder-all": "bsc putfile $DEVICE_NAME $FOLDER"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@brightsign/bsc": "^1.0.9",
+    "telnet-client": "^2.2.1"
+  }
+}
