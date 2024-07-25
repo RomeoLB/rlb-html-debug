@@ -43,6 +43,9 @@ nvm use v14.17.6 && npm install && export HOST=192.168.1.34 && export DEVICE_NAM
 ```
 7. Paste this line as is, in the VS code terminal. This dynamically generated string contains the relevant parameters to set up the project environment variables and configures the bsc CLI tool for files and folder uploads to the player using the REST API. If all goes well, you should see a message confirming that "Player added successfully" in the VS code terminal after hiting the "Return" key.
 
+   <img width="1103" alt="image" src="https://github.com/user-attachments/assets/21a1214d-3a32-46d7-87e2-702aba9af1f6">
+
+
 ## File(s) / Folder upload and autorun restart
 
 You are now ready to upload some files to the player and restart the Brightsign application using simple npm scripts!
