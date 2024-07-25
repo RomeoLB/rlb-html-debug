@@ -242,20 +242,20 @@ Sub Main()
 print ""
 print " # INSTRUCTIONS For Mac - Telnet Output" 
 print ""
-print " # INFO: 1 liner to COPY AND PASTE IN TERMINAL for setting up the node environment, adding player, setting env variables for uploading files via npm scripts"
-print " # COPY & PASTE LINE IN TERMINAL:% nvm use v14.17.6 && npm install && export HOST=" + playerIP + " && export DEVICE_NAME=" + NewPlayerName + " && export INDEXFILE=./copy-to-brightsign-player-storage/index-autoplay.html && export AUTORUNFILE=./copy-to-brightsign-player-storage/autorun.brs && export FOLDER=./copy-to-brightsign-player-storage/ && bsc addplayer " + NewPlayerName +  " " + playerIP
+print " # INFO: BELOW 1 liner to COPY AND PASTE IN TERMINAL for setting up the node environment, adding player, setting env variables for uploading files via npm scripts"
+print " # COPY & PASTE LINE IN VS CODE TERMINAL :% nvm use v14.17.6 && npm install && export HOST=" + playerIP + " && export DEVICE_NAME=" + NewPlayerName + " && export INDEXFILE=./copy-to-brightsign-player-storage/index-autoplay.html && export AUTORUNFILE=./copy-to-brightsign-player-storage/autorun.brs && export FOLDER=./copy-to-brightsign-player-storage/ && bsc addplayer " + NewPlayerName +  " " + playerIP
 print ""
 print " # INFO: Upload index HTML file and restart autorun"
-print " # COPY & PASTE LINE IN TERMINAL:% npm run upload-html-restart"
+print " # NPM SCRIPT TO TRY:% npm run upload-html-restart"
 print ""
 print " # INFO: Upload autorun.brs file and restart autorun"
-print " # COPY & PASTE LINE IN TERMINAL:% npm run upload-autorun-restart"
+print " # NPM SCRIPT TO TRY:% npm run upload-autorun-restart"
 print ""
 print " # INFO: Upload autorun.brs and HTML file then restart autorun"
-print " # COPY & PASTE LINE IN TERMINAL:% npm run upload-scripts-restart"
+print " # NPM SCRIPT TO TRY:% npm run upload-scripts-restart"
 print ""
 print " # INFO: Upload the entire folder copy-to-brightsign-player-storage then restart autorun"
-print " # COPY & PASTE LINE IN TERMINAL:% npm run upload-folder-all-restart"
+print " # NPM SCRIPT TO TRY:% npm run upload-folder-all-restart"
 print ""
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''' LIVE TELNET Instructions ''''''''''''''''''''''''''''''''''''''''''''''''''''
