@@ -1,6 +1,11 @@
 # rlb-html-debug
 
-This repo allows the user to setup their Brightsign player to debug a HTML application. 
+This repo allows the user to setup their Brightsign player in "Debug" mode to run a HTML application, to upload script file(s) and the entire content of a folder to the player (using the bsc CLI tool) and using telnet to restart the player (without needing a reboot) to run the newly updated code/content using a npm script from the vs code console:
+```bash
+npm run upload-folder-all-restart
+```
+
+You will be able to setup a development environment which uses a node-telnet client to force the player to halt the execution of the autorun.brs file by automatically sending a Ctrl-c command via Telnet (Debug mode enabled via the provided autorun.brs file). A couple more commands are automatically sent via telnet to allow to restart the autorun.brs. The bsc CLI handles all of the file transfers and allows an easy integration with the npm scripts allowing a simpler workflow for developing a HTML application on the brightsign player.
 
 The below workflow was tested on a Mac system so it may need to be adjusted slightly for a Windows based system.
 
@@ -61,6 +66,23 @@ To upload the entire foder then restart the autorun use:
 ```bash
 npm run upload-folder-all-restart
 ```
+
+## How Do I access the Chrome Developer Tools on the Brightsign player
+
+In a fairly recent Chrome version enter the below url in the address bar
+
+```bash
+chrome://inspect/#devices
+```
+Click on the "Configure..." button then enter the player IP address and port number (2999) then "Done" 
+
+<img width="783" alt="image" src="https://github.com/user-attachments/assets/52708164-fcfa-4a4b-b61c-399828f6e493">
+
+Click on the "inspect" link to inspect the HTML application that is currently running on the player
+
+<img width="774" alt="image" src="https://github.com/user-attachments/assets/675388e5-c594-40e9-8cc2-d3cde6440b9d">
+
+
 
 
 
