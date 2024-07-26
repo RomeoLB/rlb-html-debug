@@ -74,7 +74,7 @@ In a fairly recent Chrome version enter the below url in the address bar
 ```bash
 chrome://inspect/#devices
 ```
-Click on the "Configure..." button then enter the player IP address and port number (2999) then "Done" 
+Click on the "Configure..." button then enter the player IP address and port number (2999) in the relevant field on the "Target discovery settings" then click "Done" 
 
 <img width="783" alt="image" src="https://github.com/user-attachments/assets/52708164-fcfa-4a4b-b61c-399828f6e493">
 
